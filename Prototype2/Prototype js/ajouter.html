@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotheque</title>
+    <style>
+    form{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        border: solid black 2px;
+        width: 500px;
+        gap: 20px;
+        padding: 20px;
+
+    }
+    #btn{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: lightblue;
+    }
+    </style>
+</head>
+<body>
+
+<a href="catalogue.html">ajouter un livre</a>
+
+   <form id="form">
+    
+       <div> 
+        <label for="nom">code</label>
+        <input type="number"  placeholder="entrer le code">
+    </div>
+
+   <div>
+    <label for="nom">nom </label>
+    <input type="text"  placeholder="le nom de livre" >
+   </div>
+
+  <div>
+    <label for="auteur">auteur</label>
+    <input type="text"  placeholder="le nom de l'auteur" >
+    
+  </div>
+
+    <div>
+   <label for="année">année</label>
+    <input type="number" placeholder="l'année de parution">
+    </div>
+
+  <div>
+    <label for="disponible">disponible</label>
+    <input type="checkbox" >
+  </div>
+
+    
+  <div>
+    <label for="prix">prix</label>
+     <input type="number" placeholder="entrer le prix">
+     </div>
+   
+
+    <button id="btn">ajouter</button>
+   
+</form>
+  
+
+    
+    <script src="ajouter.js"></script>
+</body>
+</html>
